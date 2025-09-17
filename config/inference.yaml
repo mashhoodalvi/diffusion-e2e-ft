@@ -1,0 +1,13 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+type: command
+display_name: diffusion-inference
+experiment_name: diffusion-models
+
+
+command: >
+  bash -c "python Quickstart.py"
+
+code: ./src
+
+environment: azureml:diffusion-finetune:7
+compute: mashhood-alvi-gpu

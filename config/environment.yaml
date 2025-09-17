@@ -1,0 +1,9 @@
+$schema: https://azuremlschemas.azureedge.net/latest/environment.schema.json
+name: diffusion-finetune
+version: 8
+description: finetune diffusion models
+
+build:
+  path: ./env
+
+#conda_file: ./conda.yaml only build or conda possible
